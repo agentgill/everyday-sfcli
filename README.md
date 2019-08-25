@@ -1,6 +1,6 @@
 # Apply the Salesforce CLI to Everyday Problems
 
-Source repo for talk at Dreamforce 2018 and TrailheaDX 2019 by Peter Chittum
+[Forked from Peter](https://github.com/pchittum/everyday-sfcli)
 
 ## What Is This?
 The foundational tool of the Salesforce DX features and tools is the Salesforce CLI. 
@@ -22,7 +22,7 @@ Open the PowerShell Integrated Scripting Environment (ISE). Easiest way to do th
 
     C:\> ise $profile.CurrentUserAllHosts
 
-1. If you receive an error to the effect of _Unable to load...Could not find file_, you need to create your profile script. Fortunately PowerShell already has a system variable that points to the non-existent profile script. So you can create it as follows and then repeat the command above to open it. 
+2. If you receive an error to the effect of _Unable to load...Could not find file_, you need to create your profile script. Fortunately PowerShell already has a system variable that points to the non-existent profile script. So you can create it as follows and then repeat the command above to open it. 
 
     C:\> New-Item $profile-CurrentUserAllHosts
     C:\> ise $profile.CurrentUserAllHosts
