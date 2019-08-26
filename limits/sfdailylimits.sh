@@ -24,5 +24,7 @@ dxoutput=$(date ; sfdx force:limits:api:display $adminuser | grep -v 'Concurrent
 #scriptout=$($dxoutput > grep -v 'Hourly')
 
 #this writes to stdout for this script
-echo "${dxoutput}"
+printf "\n" >> log-output/usage.log
+echo ${adminuser} >> log-output/usage.log
+echo "${dxoutput}" >> log-output/usage.log
 exit 0
